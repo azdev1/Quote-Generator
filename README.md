@@ -9,5 +9,6 @@
    2. CSS
    3. JavaScript
 
-## API used :
-   Quote Garden API - https://quote-garden.onrender.com/api/v3/quotes
+## API used : https://dummyjson.com/quotes/random
+
+   
