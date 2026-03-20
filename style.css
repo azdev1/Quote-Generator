@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.4s, color 0.4s;
+    background-color: #f2e5d7;
+    color: #262322;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2e5d7;
+    transition: background 0.4s, color 0.4s;
+}
+
+/* Top Section */
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.top h1 {
+    font-size: 3rem;
+}
+
+.top p {
+    letter-spacing: 0.2rem;
+}
+
+/* Toggle Button */
+#toggleTheme {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quote Box */
+.quote-area {
+    height: 55vh;
+    width: 27rem;
+    background-color: #eff1f5;
+    border-radius: 0.7rem;
+    padding: 1.3rem 3rem;
+    overflow-y: auto;
+    transition: background 0.4s;
+}
+
+/* Quote Text */
+#quote {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Author */
+#author {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Button Section */
+.bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+/* Generate Button */
+#btn {
+    width: 27rem;
+    height: 4rem;
+    color: #fff;
+    background-color: #262322;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+    .quote-area {
+        width: 95vw;
+        height: 45vh;
+    }
+
+    #btn {
+        width: 95vw;
+    }
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .container {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .quote-area {
+    background-color: #2a2a2a;
+}
+
+body.dark #btn {
+    background-color: #333;
+    color: white;
+}
+
+body.dark #toggleTheme {
+    color: white;
+}
